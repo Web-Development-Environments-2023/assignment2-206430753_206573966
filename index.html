@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="jsscript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style2.css"/> 
+
+    <title>Galactic WarZone </title>
+</head>
+<body>
+    <audio id="back_song" src="star_wars.mp3"  style="display: none;"></audio>
+    <audio id="shot_song" src="Good_shot.mp3"  style="display: none;"></audio>
+    <audio id="crash_bad_song" src="Bad_crush.mp3"  style="display: none;"></audio>
+    <audio id="crash_good_song" src="good_is_dead.mp3"  style="display: none;"></audio>
+            <header id="header_part">
+                <img  id="logoimg" src="alien_logo.gif" > 
+                <h1 id="userName" ></h1>
+            </header>
+
+            <nav id="nav_part">
+                <div id="menu">
+                    <h1>תפריט</h1>
+                    <button id="moveto_login"  onclick="login_fun()">התחברות</button>
+                    <br>
+                    <br>
+                    <button  id="moveto_signup"  onclick="signup_fun()">הרשמה</button>
+                    <br>
+                    <br>
+                    <button  id="moveto_about"  onclick="open_about()">אודות</button>
+                    <br>
+                    <br>
+                    <button  id="moveto_mainpage"  onclick="mainpage_fun()">מסך ראשי</button>
+                    <br>
+                    <br>
+                </div>
+                <p></p>
+        </nav>
+        <section id="content">
+            <dialog id="about_dialog" dir="rtl">
+                <button id="exit_button" onclick="close_dialog()"> X</button>
+                <div id="temp">
+                <br>
+                <h3 style="text-align: center;">הוראות המשחק:</h3>
+                <p>מטרתך הינה לחסל את כל החלליות הרעות בתוך פרק הזמן הקצוב של המשחק</p>
+                <p>על מנת להזיז את החללית הטובה שלך יש לנוע בעזרת מקשי החיצים בלבד</p>
+                <p>על מנת לבצע יריה יש ללחוץ על המקש אותו בחרת מתוך לוח האותיות/רווח לפני תחילת המשחק</p>
+                <p>לאחר התחברותך למערכת תגיע לדף קונפיגורציה שמגדיר את הגדרות המשחק. תוכל לבחור את השחקן שלך,<br> זמן המשחק והמקש במקלדת בו תרצה להשתמש ליריה</p>
+                <p>*שים לב כי לאחר התחלת המשחק לא תוכל לשנות את ההגדרות ותוכל לשנות אותן רק אם תתחבר מחדש.</p>
+                <p>במהלך המשחק תוכל בכל שלב לעצור באופן זמני את המשחק בלחיצה על הכפתור משחק חדש. <br>לאחר הלחיצה תוכל לבחור האם להמשיך במשחק הקיים או להתחיל משחק חדש.</p>
+                <h3>אודות העבודה:</h3>
+                <p> בעבודה זו לא נעשה שימוש בTemplate ולא נעשה שימוש בjQuery </p>
+                <h3>מגישות:</h3>
+                <p> נטע קירמאיר ורוני שיר </p>
+                <br>
+                </div>
+            </dialog>
+            <div id="welcome">
+                <img  id="title_img" src="logo4.png"> 
+                <p id="submit_name"> רוני 206573966<br>נטע 206430753</p>
+                <button id="signup_button" style="position: relative;">הרשמה</button>
+                <button id="login_button" style="position: relative;">התחברות</button>
+            </div>
+
+            <div id="login" style="display: none;">
+                <h1 id="form_title">כניסה</h1>
+                <form id="signup_form">
+                    <input type="text" id="username_login">
+                    <label class="type1Form">שם משתמש</label><br>
+                    
+                    <input type="password" id="password_login">
+                    <label class="type1Form">סיסמא</label><br>
+
+                    <input type="button" id="enter_game" value="התחברות" onclick="check_login_fun()">
+                </form>
+
+            </div>
+
+            <div id="signup" style="display: none;">
+                <h1 id="form_title" >הרשמה</h1>
+                <form id="signup_form">
+                    
+                    <div class="inForm">
+                        <input type="text" id="Pname">
+                        <label class="type1Form">שם פרטי</label><br>
+                    </div>
+                    
+                    <div class="inForm">
+                        <input type="text" id="Lname">
+                        <label class="type1Form">שם משפחה</label><br>
+                    </div>
+                    
+                    <div class="inForm">
+                        <input type="text" id="username">
+                        <label class="type1Form">שם משתמש</label><br>
+                    </div>
+                    
+                    <div class="inForm">
+                        <input type="password" id="password">
+                        <label class="type1Form">סיסמא</label><br>
+                    </div>
+                    
+                    <div class="inForm">
+                        <input type="password" id="password_confirm">
+                        <label class="type1Form">אימות סיסמא</label><br>
+                    </div>
+                    
+                    <div class="inForm">
+                        <input type="email" id="mail">
+                        <label class="type1Form">מייל</label><br>
+                    </div>
+                    
+                    <div class="inForm">
+                        <input type="date" id="birth">
+                        <label id="dateLabel" class="type1Form">תאריך לידה</label><br>
+                    </div>
+                    <br>
+                    <input type="button" id="submit_button" onclick="check_fun()" value="להרשמה">
+                    <br>
+                </form>
+                </div>
+
+            <div id="game" style="display: none;">
+                <canvas id="board"></canvas> 
+            </div>
+            <dialog id="table_dialog" dir="rtl">
+                <div id="temp1">
+                    <h3 id="headline" style="text-align: center; color: red" dir="rtl"></h3>
+                    <table id="records">
+                        <tr>
+                            <th style="color: red;">Points Gained</th>
+                            <th style="color: red;">Game Number</th>
+                        </tr>
+                    </table>
+                    <button id="welcomeMenu" onclick="mainPage()">חזור למסך הראשי</button>
+                    <button id="new_game_button" onclick="newGameDialog()">משחק חדש</button>
+                    <h6 dir="rtl">*חזרה למסך הראשי תאפס את טבלת השיאים האישית</h4>
+                </div>
+            </dialog>
+
+            <dialog id="restart_dialog" dir="rtl">
+                <div style=" font-size: 1.5vw; background-color: rgba(248, 237, 39, 0.784);">
+                <div id="restart_dialog_div">
+                <br>
+                <h3 style="text-align: center; padding-right: 3%;">האם אתה בטוח שברצונך להתחיל מחדש?</h3>
+                <button id="yes_button" style="width: 40%; height: 30%;" onclick="beginNewGame()"> התחל משחק חדש</button>
+                <button id="no_button" style="width: 40%; height: 30%;" onclick="countinueGame()"> המשך משחק נוכחי</button>
+                <br>
+                <br>
+                </div>
+            </dialog>
+            
+            <div id="configuration" style="display: none;">
+                <h1 id="confi_title">הגדרות</h1>
+                <form id="configuration_form">
+                    <br>
+                    <br>
+                    <label style="color: #ffd518;">בחר חללית טובה</label>
+                    <br>
+                    <br>
+                    <input type="radio" id="game_img1" name="good_spaceship" value="1"><img src="1.gif" id="game_img1" width="8%" height="20%">
+                    <input type="radio" id="game_img2" name="good_spaceship" value="2"><img src="2.gif" id="game_img2" width="8%" height="20%">
+                    <input type="radio" id="game_img3" name="good_spaceship" value="3"><img src="3.gif" id="game_img3" width="8%" height="20%">
+                    <input type="radio" id="game_img4" name="good_spaceship" value="4"><img src="4.gif" id="game_img4" width="8%" height="20%">
+                    <br>
+                    <br>
+                    <label style="color: #ffd518;">בחר משך זמן משחק(בשניות)</label><br>
+                    <input type="number" id="geme_time" min="120">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="button" id="shoot_key" onclick="shootkey()" value="לחץ כאן"></button>
+                    <label style="color: #ffd518;">לבחירת מקש ירייה אנא לחץ כעת על אחד ממקשי האותיות/רווח ולחץ כאן על מנת לאשר את בחירתך</label>
+                    <br>
+                    <label dir="rtl" id="show_key" style="color: #ffd518;"></label>
+                    <br>
+                    <input type="button" id="startgame_btn" onclick="startgame()" value="התחל משחק"></button>
+                </form>
+            </div> 
+
+        <!-- </div> -->
+    </section>
+    <aside>
+        <button id="restart_button"  style="position: relative; display: none;" onclick="restartGame()" >משחק חדש</button>
+    </aside>
+        <!-- <div id="footer"> -->
+    <footer>
+        <p id="footer_text" dir="rtl"> נטע קירמאיר kirmayer@post.bgu.ac.il ורוני שיר ronyshi@post.bgu.ac.il<br>עבודה מתוך קורס סביבות פיתוח באינטרנט סמסטר ב 2023</p>
+    </footer>  
+            
+<!-- </div>    -->
+        <!-- </div> -->
+</body>
+</html>

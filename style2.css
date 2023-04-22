@@ -1,0 +1,413 @@
+
+
+html,body{
+    width: 100%;
+    height: 98%;
+    margin:0;
+    padding: 0;
+    background-image: url(mainbackground.jpg);
+}
+
+header
+{    
+    color: blanchedalmond;
+    text-align: center;
+    top:0;
+    margin: 0;
+    padding-top: 10px;
+    height: 10%;
+    width: 100%;
+    position: relative;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section
+{
+    float: left;
+    height: 80%;
+    background-image: url(alien_back4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: black;
+    width: 80%;
+    position: relative;
+    text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+nav
+{
+
+    color: blanchedalmond;
+    float: left;
+    height: 80%;
+    width: 10%;
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+aside
+{
+    color: blanchedalmond;
+    text-align: center;
+    float: left;
+    height: 80%;
+    width: 10%;
+    font-size: 25px;
+    position: relative;
+}
+
+
+footer
+{
+    color: blanchedalmond;
+    float: left;
+    height: 10%;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    padding-top: 10px;
+}
+
+button
+{
+    /* width:100px; */
+    
+    width: 90%;
+    height: 30%;
+    color: black;
+    border: 3px solid #ffd518;
+    font-size: 1.5vw;
+
+    border-radius:8px;
+    padding: 10px 15px;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#menu
+{
+    position: relative;
+    padding-top: 25%;
+}
+#gamename
+{
+    color: #ffd518;
+    font-size: 2.3vw;
+    float: right;
+}
+button:hover
+{
+    background-color: antiquewhite;
+    font-weight: bold;
+    border: 5px solid #ffd518;
+}
+dialog
+{
+    background-image: url(about_bakground1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    font-weight: bold;
+
+}
+#temp
+{
+    font-size: 1.5vw;
+    background-color: rgba(248, 237, 39, 0.784);
+    
+}
+#exit_button
+{
+    float: left;
+    width: 10%;
+    text-align: center;
+}
+#logoimg:hover
+{
+    border: none;
+}
+#logoimg
+{
+    float: left; 
+    padding-left: 1%;
+    border: none;
+    width:13%;
+    height:99%;
+}
+#footer_text
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1vw;
+    padding-top: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+ #title_img
+{
+    position: relative;
+    float: right;
+    width: 50% ;
+} 
+
+#submit_name
+{
+    position: relative;
+    padding-top:25%;
+    font-size: 2.4vw;
+    padding-right: 12%;
+    color: #ffd518;
+}
+
+#signup_button
+{
+    width: 20%;
+    height: 8%;
+    position: relative;
+    padding-right: 13%;
+    border-radius:8px;
+    right: 10%;
+    padding: 0.5vh 0.5vw;
+    color: black;
+    border: 5px solid #ffd518;
+}
+
+#signup_button:hover
+{
+    background-color: antiquewhite;
+    font-weight: bold;
+    border: 5px solid #ffd518;
+}
+
+#login_button
+{
+    width: 20%;
+    height: 8%;
+    color: black;
+    position: relative;
+    padding-right: 1%;
+    border-radius:8px;
+    padding: 0.5vh 0.5vw;
+    border: 5px solid #ffd518;
+    right:7%;
+}
+
+#login_button:hover
+{
+    background-color: antiquewhite;
+    font-weight: bold;
+    border: 5px solid #ffd518;
+}
+
+#restart_button
+{
+    height:10%;
+    top: 10%;
+}
+#form_title
+{    
+    font-size: 3.5vw;
+    color: #ffd518;
+    position: relative;
+    padding-right: 25%;
+
+    margin: 0;
+    padding-top: 30px;
+}
+
+#signup_form
+{
+    
+    font-size: 2vw;
+
+    color: #ffd518;
+    position: relative;
+    padding-right: 150px;
+    text-align: center;
+
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-right: 13%;
+
+    float: right;
+}
+
+#submit_button
+{
+    width: 40%;
+    height: 8%;
+    font-size: large;
+    padding: 10px  30px;
+    border-radius:8px;
+    margin: 0 7%;
+    border: 5px solid #ffd518;
+}
+
+#submit_button:hover
+{
+    background-color: antiquewhite;
+    font-weight: bold;
+    border: 5px solid #ffd518;
+}
+
+#enter_game
+{
+    width: 40%;
+    height: 8%;
+    font-size: large;
+    padding-left: 1%;
+    padding-top: 27%;
+    padding: 5px  15px;
+    border-radius:8px;
+    margin: 10px 50px;
+    border: 5px solid #ffd518;
+}
+
+#enter_game:hover
+{
+    background-color: antiquewhite;
+    font-weight: bold;
+    border: 5px solid #ffd518;
+} 
+
+#configuration_form
+{
+    text-align: center;
+    position: relative;
+    height: 50%;
+    font-size: 1.5vw;
+    
+}
+#startgame_btn
+{
+    padding-left: 1%;
+    padding-top: 27%;
+    padding: 0.5vh 0.5vw;
+    border-radius:8px;
+    margin: 10px 50px;
+    border: 5px solid #ffd518; 
+    font-size: 1.5vw;
+}
+#shoot_key
+{
+    padding: 0.5vh 0.5vw;
+    border-radius:8px;
+    font-size: 1.5vw;
+    border: 5px solid #ffd518; 
+}
+
+#gmaename
+{
+    float: right;
+    position: relative;
+    margin:0;
+    font-size: larger;
+    padding-top: 1%;
+    padding-left: 10%;
+}
+
+#confi_title
+{
+    font-size: 3.5vw;
+    color: #ffd518;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
+}
+
+#temp1
+{
+    font-size: 1.5vw;
+    background-color: rgba(248, 237, 39, 0.784);
+}
+
+
+th, td {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+    height: 25%;
+}
+
+li{
+    display: inline;
+}
+
+ul{
+    display: inline;
+}
+
+#exit_button_table
+{
+    float: left;
+    width: 10%;
+    text-align: center;
+}
+
+#new_game_button{
+    width: 40%;
+    height: 8%;
+    position: relative;
+    border-radius:8px;
+    padding: 0.5vh 0.5vw;
+    color: black;
+    border: 5px solid #ffd518;
+}
+
+#welcomeMenu{
+    width: 40%;
+    height: 8%;
+    color: black;
+    position: relative;
+    border-radius:8px;
+    padding: 0.5vh 0.5vw;
+    border: 5px solid #ffd518;
+    left: 2%;
+}
+
+table{
+    text-align: center;
+    padding: 5%;
+    padding-right: 12%;
+    font-size: 1.2vw;
+}
+
+#table_dialog{
+    height: 50%;
+    width: 50%;
+    text-align: center;   
+}
+
+#headline{
+    padding-right: 10%;
+}
+
+input {
+    font-size:  1vw;
+}
+
+.inForm{
+    margin-bottom: 10px;
+}
+
+.type1Form{
+    display: inline-block;
+    width: 300px;
+    text-align: right;
+}
+
+#userName{
+    float: right;
+    padding-right: 5%;
+    font-size: 1.5vw;
+    color: #ffd518;
+}
