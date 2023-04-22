@@ -273,6 +273,13 @@ function check_fun()
     var i=0
     for(i=0;i<mail.length;i++)
     {
+	if(i==(mail.length-1))
+        {
+            if(mail[i].match(/[.]/))
+            {
+                message+=" \nכתובת מייל לא יכולה להסתיים בנקודה"
+            }
+        }
         if(!(mail[i].match(/[0-9]/)||mail[i].match(/[a-zA-Z]/)||mail[i].match(/[.]/)||mail[i].match(/[@]/)))
         {
             message+=" \nכתובת מייל יכולה להיות מורכבת מאותיות, מספרים ונקודה בלבד"
