@@ -2,3 +2,7 @@
 
 
 https://web-development-environments-2023.github.io/assignment2-206430753_206573966/
+
+מגישות:
+206430753
+206573966
